@@ -1,0 +1,24 @@
+Elicitação de requisitos 
+1.Qual é o escopo do sistema?
+Quero um sistema que eu possa digitar vários valores e ele identifique quais são pares, quais são impares,
+fazer a soma de todos os pares e os impares separadamente e dividir o resultado maior pelo menor.
+
+2.Quantos valores serão digitados?
+6 Valores.
+
+3.Os numeros digitados serão numero inteiros ou poderão ser decimais?
+Números inteiros.
+
+4.O resultado da divisão sera dado em numeros inteiros?
+Números quebrado de duas casas decimais.
+
+5.Existe alguma preferencia de interface?
+Sim, se possivel um que o programa possa ser executado em qualquer terminal.
+
+6.Como sera feita a entrada dos numeros, um por linha ou seguidos separados por um espaço, especifique?
+Na verdade eu queria algo no formato "Número 1> ___
+                                      Número 2> ___
+                                      ...           ".
+
+7.Como sera disposta a saida do programa?
+Algo no formato "Resultado> ___".
