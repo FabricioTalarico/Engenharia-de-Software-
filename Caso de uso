@@ -1,7 +1,7 @@
 CASO DE USO TEXTUAL
 Entrada de valores
 1. Identificador
-Entrada de valores
+UC1
 2. Nome
 Entrada de valores
 3. Autores
@@ -37,7 +37,7 @@ O usuário deve entrar com seis valores de números inteiros e pressionar a tecl
 Separar impar/par
 
 1. Identificador
-Separar impar/par
+UC2
 2. Nome
 Separar impar/par
 3. Autores
@@ -74,8 +74,8 @@ O sistema separa os números pares e impares
 Soma dos números
 
 1. Identificador
-Soma 
-2. Nome
+UC3
+3.Nome
 Soma
 3. Autores
 Sistema 
@@ -108,7 +108,7 @@ O sistema obtem os valores das somas dos números impares e pares
 
 Divisão
 1.Identificador
-Divisão
+UC4
 2. Nome
 Divisão
 3. Autores
@@ -142,7 +142,7 @@ O sistema fará a divisão da maior soma pela maior e mostrara o resultado na te
 
 Mensagem de erro
 1. Identificador
-Mensagem de erro 
+UC5
 2. Nome
 Mensagem de erro
 3. Autores
