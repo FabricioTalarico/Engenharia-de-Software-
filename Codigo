@@ -1,0 +1,85 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+void soma(int impar[3], int par[3])
+{
+	int totalP; 
+	int totalI; 
+	int quo;
+	totalP = par[0] + par[1] + par[2];
+	totalI = impar[0] + impar[1] + impar[2];
+
+	cout << "par:" << totalP << endl;
+	cout << "impar:" << totalI << endl;
+	
+	if (totalI >= totalP)
+		quo = totalI / totalP;
+
+	else
+		quo = totalP / totalI;
+
+	cout << "Resultado>" << quo << endl;
+}
+
+void separar(double x[6], int par[3], int impar[3])
+{
+	int y[6];
+	int i = 0;
+	int p = 0;
+	int z = 0;
+	
+	
+	for (i = 0; i < 6; i++)
+	{
+		y[i] = (int)x[i];
+	}
+	
+	for (i = 0; i < 6; i++)
+	{
+		if (y[i] % 2 == 0)
+		{		
+				par[p] = y[i];
+				p++;
+		}
+
+		else
+		{
+				impar[z] = y[i];
+				z++;
+		}
+	}
+}
+
+void entrada(double x[6])
+{
+	
+	int i;
+	cout << "Entre com os valores:" << endl;
+	for (i = 0; i < 6; i++)
+	{
+		
+		cout << "Numero " << i + 1 << ">" << endl;
+		cin >> x[i];
+	
+	}
+	
+}
+
+
+int main()
+{
+	double x[6];
+	int impar[3], par[3];
+	int	quo = 1;
+	int totalP = 1;
+	int totalI = 1;
+	cout << "MecaMath" << endl;
+	entrada(x);
+	separar(x, par, impar);
+	soma(impar, par);
+	system("pause");
+	return 0;
+}
