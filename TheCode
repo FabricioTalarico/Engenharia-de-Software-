@@ -38,12 +38,18 @@ void entrada(int z[6], int y[6])
 {
 	double x[6];
 	int i;
-	
+	volt:
 	cout << "Entre com os valores:" << endl;
 	for (i = 0; i < 6; i++)
 	{
 		cout << "Numero " << i + 1 << ">" << endl;
 		cin >> x[i];
+		if (x[i] < 0)
+		{
+			cout << "\nERRO!!/nEntre apenas com numeros positivos\n\n" << endl;
+			
+			goto volt;
+		}
 	}
 
 	for (i = 0; i < 6; i++)
@@ -77,7 +83,7 @@ int main()
 	main:
 	entrada(z, y);
 	resultado(z, y, somaPar, somaImpar);
-	cout << "Deseja realizar uma nova operação?[sim-1/nao-2]" << endl;
+	cout << "Deseja realizar uma nova operacao?[sim-1/nao-2]" << endl;
 	cin >> f;
 	if (f == 1)
 	{
